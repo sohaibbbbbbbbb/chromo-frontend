@@ -81,7 +81,7 @@ const ColorPaletteUI: React.FC<ColorPaletteUIProps> = ({ id }) => {
       .on(
         "postgres_changes",
         {
-          event: "INSERT",
+          event: "*",
           schema: "public",
           table: "palettes",
           filter: `project_id=eq.${id}`,

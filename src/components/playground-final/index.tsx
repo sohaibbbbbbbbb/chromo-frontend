@@ -16,7 +16,7 @@ export default function PlaygroundFinal({ id }: PlaygroundFinalProps) {
 
   useEffect(() => {
     const fetchPalettes = async () => {
-      console.log('testing 🔥🔥🔥');
+      console.log("testing 🔥🔥🔥");
       const { data, error } = await supabase
         .from("palettes")
         .select("*")
